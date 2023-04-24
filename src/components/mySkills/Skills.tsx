@@ -7,7 +7,6 @@ import {skillsData} from "components/mySkills/skills-data";
 
 
 export const Skills = () => {
-
     const skills = skillsData.map(skill => {
         return (
             <Skill key={skill.id}
