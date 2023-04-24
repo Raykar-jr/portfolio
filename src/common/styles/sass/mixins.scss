@@ -1,0 +1,31 @@
+@mixin wrapperBlock($bgColor, $minHeight) {
+  background: $bgColor;
+  min-height: $minHeight;
+}
+
+@mixin container() {
+  //border: 2px solid #eccbcb;
+  width: 75%;
+  height: 75%
+}
+
+@mixin text($fontFamily, $fontSize, $fontWeight, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}

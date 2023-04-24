@@ -1,0 +1,17 @@
+@import './src/common/styles/sass';
+
+.wrapper {
+  @include wrapperBlock($firstBgColor, 100vh);
+  @include flex-center();
+
+  .centerBlock {
+    @include container();
+    @include flex(column,flex-start, center, nowrap);
+
+    .allProjects {
+      @include flex(row,center, null, wrap);
+      max-width: 100%
+    }
+  }
+}
+

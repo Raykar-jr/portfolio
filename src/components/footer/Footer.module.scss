@@ -1,0 +1,35 @@
+@import './src/common/styles/sass';
+
+.footerWrapper {
+  @include wrapperBlock($firstBgColor, 15vh);
+  @include flex(column, center, center, nowrap);
+
+  .footerContainer {
+    @include container();
+    @include flex(column, center, center, nowrap);
+    .icons {
+      margin: 5px 0;
+      padding-right: 10px;
+      span {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.title {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  span {
+    color: $accentColor;
+  }
+}
+
+.copyright {
+  margin: 10px;
+  font-size: 12px;
+
+}

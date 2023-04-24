@@ -1,0 +1,11 @@
+@import './src/common/styles/sass';
+
+.header {
+    @include flex-center();
+    min-width: 100%;
+    background: $secondBgColor;
+    height: 60px;
+    z-index: 5;
+    position: fixed;
+
+}

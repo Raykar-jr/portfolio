@@ -1,0 +1,25 @@
+@import '/src/common/styles/sass';
+
+.wrapper {
+    @include wrapperBlock($secondBgColor, 100vh);
+    @include flex-center();
+    .centerBlock {
+        @include flex(column, flex-start, center, nowrap);
+        @include container()
+    }
+
+    .skillsBlock {
+        @include flex(row, space-evenly, null, wrap);
+        width: 100%;
+        //border: 2px solid;
+        @media screen and (max-width: 730px ) {
+            & {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+

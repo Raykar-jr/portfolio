@@ -1,0 +1,19 @@
+@import './src/common/styles/sass';
+
+.nav {
+    display: flex;
+    min-width: 30%;
+    justify-content: space-between;
+    gap: 10px;
+    a {
+        color: $mainTextColor;
+        cursor: pointer;
+        &:hover {
+            color: $accentColor;
+        }
+    }
+    .active {
+        color: $accentColor;
+    }
+}
+
